@@ -40,5 +40,28 @@ modules:
         - org.gnome.eog
     user: {} # Also add Flathub user repo, but no user packages
 
+  - type: bling
+    install:
+      - 1password
+  - type: chezmoi
+    repository: "https://github.com/billm/dotfiles"
+    file-conflict-policy: replace
+  - type: brew
+    nofile-limits: true
+    auto-update: true
+    auto-upgrade: true
+    brew-analytics: false
+  - type: fonts
+    fonts:
+      nerd-fonts:
+        - FiraCode # don't add spaces or "Nerd Font" suffix.
+        - Hack
+        - SourceCodePro
+        - Terminus
+        - JetBrainsMono
+        - NerdFontsSymbolsOnly
+      google-fonts:
+        - Roboto
+        - Open Sans
   - type: signing # this sets up the proper policy & signing files for signed images to work fully
 
