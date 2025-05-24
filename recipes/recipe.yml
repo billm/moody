@@ -43,7 +43,7 @@ modules:
         - io.github.milkshiift.GoofCord # Discord has an error log which effectively keystroke logs into the system log
         - com.slack.Slack
         - md.obsidian.Obsidian
-        - org.freedesktop.Sdk.Extension.texlive # pdflatex support for obsidian
+        - org.freedesktop.Sdk.Extension.texlive//24.08 # pdflatex support for obsidian
         - de.capypara.FieldMonitor
         - com.bambulab.BambuStudio
       remove:
